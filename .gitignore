@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Pytest / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Editor / OS
+.DS_Store
+desktop.ini
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# grassval runtime outputs (not part of the package)
+imagery/
+logs/
+results/

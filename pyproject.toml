@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "grassval"
+version = "0.1.0"
+description = "Download Esri Wayback imagery and visually validate points from a CSV — dataset-agnostic, works in any remote sensing context."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Vikesh Dheeriya", email = "vikesh@ucsb.edu" }]
+keywords = ["validation", "wayback", "imagery", "remote-sensing", "grassland", "neon", "land-cover"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: GIS",
+    "Topic :: Scientific/Engineering :: Image Processing",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "pandas>=1.5.0",
+    "requests>=2.28.0",
+    "tqdm>=4.64.0",
+    "Pillow>=9.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/vikeshdh/grassval"
+Repository = "https://github.com/vikeshdh/grassval"
+"Bug Tracker" = "https://github.com/vikeshdh/grassval/issues"
+
+[project.scripts]
+grassval = "grassval.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+grassval = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
