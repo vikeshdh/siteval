@@ -1,8 +1,8 @@
-"""grassval — download Esri Wayback imagery and validate points from a CSV.
+"""siteval — download Esri Wayback imagery and validate points from a CSV.
 
 Public API:
-    WaybackDownloader  — download unique Wayback snapshots for a point CSV
-    ImageValidator     — Tk GUI for binary Accept/Reject of downloaded imagery
+    WaybackDownloader  — download Wayback snapshots for a point CSV
+    ImageValidator     — Tk GUI for Accept/Reject/Caution of downloaded imagery
     load_points        — utility to read & validate a points CSV
 """
 
@@ -17,4 +17,4 @@ __all__ = [
     "load_points",
 ]
 
-__version__ = "0.1.0"
+__version__ = "0.2.0"

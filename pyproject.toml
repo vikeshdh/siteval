@@ -3,14 +3,14 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "grassval"
-version = "0.1.0"
-description = "Download Esri Wayback imagery and visually validate points from a CSV — dataset-agnostic, works in any remote sensing context."
+name = "siteval"
+version = "0.2.0"
+description = "Download Esri Wayback imagery and visually validate geographic points from a CSV — dataset-agnostic, works in any remote sensing or land-cover context."
 readme = "README.md"
 requires-python = ">=3.9"
 license = { text = "MIT" }
 authors = [{ name = "Vikesh Dheeriya", email = "vikesh@ucsb.edu" }]
-keywords = ["validation", "wayback", "imagery", "remote-sensing", "grassland", "neon", "land-cover"]
+keywords = ["validation", "wayback", "imagery", "remote-sensing", "land-cover", "geospatial", "site-validation", "temporal"]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Science/Research",
@@ -36,20 +36,23 @@ dev = [
     "pytest>=7.0",
     "pytest-cov>=4.0",
 ]
+build = [
+    "pyinstaller>=5.0",
+]
 
 [project.urls]
-Homepage = "https://github.com/vikeshdh/grassval"
-Repository = "https://github.com/vikeshdh/grassval"
-"Bug Tracker" = "https://github.com/vikeshdh/grassval/issues"
+Homepage = "https://github.com/vikeshdh/siteval"
+Repository = "https://github.com/vikeshdh/siteval"
+"Bug Tracker" = "https://github.com/vikeshdh/siteval/issues"
 
 [project.scripts]
-grassval = "grassval.cli:main"
+siteval = "siteval.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
 
 [tool.setuptools.package-data]
-grassval = ["py.typed"]
+siteval = ["py.typed"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

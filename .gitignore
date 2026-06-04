@@ -25,7 +25,16 @@ Thumbs.db
 .idea/
 .vscode/
 
-# grassval runtime outputs (not part of the package)
+# siteval runtime outputs (not part of the package)
 imagery/
+output/
 logs/
 results/
+validated_points.csv
+
+# Downloaded imagery dropped inside examples/ during local testing
+examples/*/
+
+# PyInstaller working directory
+build/
+dist/
