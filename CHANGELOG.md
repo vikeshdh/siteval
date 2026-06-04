@@ -24,7 +24,7 @@ Versioning follows [Semantic Versioning](https://semver.org/).
 - **Dual CSV schema** — accepts `target_date` (YYYY-MM-DD) or legacy
   `target_year` (integer, auto-converted to YYYY-07-01 with a warning).
 - `siteval download` flags: `--n-images`, `--span-years`, `--tile-size`.
-- PyInstaller spec (`siteval.spec`) and `build.py` for producing a
+- PyInstaller spec (`siteval.spec`) and `build_exe.py` for producing a
   standalone `.exe` / app bundle.
 
 ### Changed

@@ -54,7 +54,7 @@ To build a double-clickable app for sharing with non-technical users:
 
 ```bash
 pip install pyinstaller
-python build.py
+python build_exe.py
 ```
 
 This produces `dist/siteval.exe` (Windows) or `dist/siteval` (macOS/Linux).

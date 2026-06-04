@@ -1,7 +1,10 @@
 """Build script: produces dist/siteval.exe (or dist/siteval on macOS/Linux).
 
+Named build_exe.py (not build.py) so it does not shadow the PEP 517 ``build``
+module used by ``python -m build`` during packaging.
+
 Usage:
-    python build.py
+    python build_exe.py
 
 Requires PyInstaller:
     pip install pyinstaller
