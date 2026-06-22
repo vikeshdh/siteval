@@ -3,21 +3,9 @@
 [![CI](https://github.com/vikeshdh/siteval/actions/workflows/ci.yml/badge.svg)](https://github.com/vikeshdh/siteval/actions/workflows/ci.yml)
 [![PyPI version](https://badge.fury.io/py/siteval.svg)](https://pypi.org/project/siteval/)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-**siteval** downloads [Esri Wayback](https://livingatlas.arcgis.com/wayback/)
-very-high-resolution historical imagery for a list of geographic points and
-presents them in a clean **Accept / Reject / Caution** GUI for visual
-validation. Give it a CSV of coordinates and a target date; it samples imagery
-through time around each point so you can review land-cover change and confirm
-what's on the ground.
-
-It is **dataset-agnostic** — any CSV with `id`, `lat`, `lon`, and a
-`target_date` (or `target_year`) column works.
-
-**Use cases:** land-cover validation, training-data quality control, plot-level
-habitat assessment, change-detection review, or any remote sensing workflow
-where a human needs to judge historical satellite/aerial imagery.
+siteval downloads Esri Wayback high-resolution historical imagery for a list of points and presents them in an Accept / Reject / Caution GUI for review. It inputs a CSV with id, lat, lon, and a target_date and samples imagery through time around each point so you can judge land-cover change. 
+Use cases: land-cover validation, training data examinations, plot-level habitat assessment, change-detection review.
 
 ---
 
