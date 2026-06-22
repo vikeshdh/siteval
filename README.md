@@ -13,8 +13,8 @@ Use cases: land-cover validation, training data examinations, plot-level habitat
 
 | | Best for |
 |---|---|
-| **Desktop app** (`siteval run`) | A guided 4-step window: upload → set parameters → download → validate. No command line needed. |
-| **Command line** (`siteval download` / `siteval validate`) | Scripting, batch jobs, and reproducible pipelines. |
+| **Desktop app** (`siteval run`) | A guided 4-step window: upload → set parameters → download → validate |
+| **Command line** (`siteval download` / `siteval validate`) | Allows for scripting, batch jobs, and reproducible pipelines. |
 
 ---
 
@@ -38,7 +38,7 @@ Requires Python 3.9+. Dependencies: `pandas`, `requests`, `tqdm`, `Pillow`.
 
 ### Standalone executable (no Python required)
 
-To build a double-clickable app for sharing with non-technical users:
+An app that is useful for non-technical users:
 
 ```bash
 pip install pyinstaller
@@ -57,11 +57,11 @@ siteval run
 
 A single window walks you through four steps:
 
-1. **Upload CSV** — pick your points file; siteval previews it and checks the schema.
+1. **Upload CSV** — siteval previews the points and checks formatting
 2. **Parameters** — set how far back/forward in time to sample, the interval
    between images, the zoom level, and the tile-grid size. A live preview shows
    exactly how many images each point will produce.
-3. **Download** — imagery is fetched from Esri Wayback with a progress bar.
+3. **Download** — imagery is retrieved from Esri Wayback with a progress bar.
 4. **Validate** — review each point and record Accept / Reject / Caution + notes.
 
 ---
